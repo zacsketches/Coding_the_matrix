@@ -40,3 +40,35 @@ print(sum(s2))		# 6
 #sum starting at a value other than zero
 print(sum(s2, 10))	# 16
 
+#Test for set membership
+print(2 in s2)		# True
+print(5 not in s2)	# True
+
+#Union is all elements in both sets
+s3 = {3, 4, 2}
+print(s2|s3)
+
+#Intersection is elements present in both sets
+print(s2 & s3)
+
+#mutating a set
+s4 = {1,2,3}
+s4.add(4)
+s4.remove(2)
+print(s4)
+
+#Set comprehensions
+s5 = {2*x for x in {1,2,3}}
+print(s5)
+square_set = {x**2 for x in {1,2,3,4,5}}
+print(square_set)
+
+power_set = {2**x for x in {0,1,2,3,4}}
+print(power_set)
+
+double_comp_set = {x*y for x in {1,2,3} for y in {2,3,4}}
+print(double_comp_set)
+
+
+
+
